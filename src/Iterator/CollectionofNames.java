@@ -21,7 +21,7 @@ public class CollectionofNames implements Container {
         int i;
         @Override
         public boolean hasNext() {
-            if (i<name.length){
+            if (i<array.length){
                 return true;
             }
             return false;
@@ -29,10 +29,11 @@ public class CollectionofNames implements Container {
         @Override
         public Object next() {
             if(this.hasNext()){
-                return name[i++];
+                return array[i++];
             }
             return null;
         }
+
     }
 }
 

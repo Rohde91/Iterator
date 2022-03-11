@@ -24,8 +24,9 @@ public class Main {
         CollectionofNames cmpnyRepository = new CollectionofNames(array);
 
         for(Iterator iter = cmpnyRepository.getIterator(); iter.hasNext();){
-            String name = (String)iter.next();
-            System.out.println("Name : " + name);
+            Person p = (Person) iter.next();
+            //String stdnr = (String)iter.next();
+            System.out.println(p.toString());
         }
     }
 }
