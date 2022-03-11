@@ -1,7 +1,16 @@
-package FilEksempler;
+package Iterator;
+
+import java.util.Arrays;
 
 public class CollectionofNames implements Container {
-    public String name[]={"Ashwani Rajput", "Soono Jaiswal","Rishi Kumar","Rahul Mehta","Hemant Mishra"};
+
+   // public String Student;
+    public Person[] array;
+
+    public CollectionofNames(Person[] array){
+        this.array = array;
+    }
+
 
     @Override
     public Iterator getIterator() {
